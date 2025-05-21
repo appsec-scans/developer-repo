@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: cxone scan
-        uses: ModelN/appsec-scan-action@main
+        uses: appsec-scans/appsec-scan-action@main
         with:
           cx_tenant: ${{ secrets.CX_TENANT }}
           base_uri: ${{ secrets.BASE_URI }}
